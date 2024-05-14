@@ -1,0 +1,47 @@
+Q.2 Write a Program to find the average of a 1D array.
+For example,
+Input:
+Enter array size: 5
+Enter array elements:
+a[0] = 12
+a[1] = 42
+a[2] = 18
+a[3] = 50
+a[4] = 26
+
+Output:
+Average of an Array: 29.6
+#include <stdio.h>
+
+int main() {
+   int n,sum=0;
+ 
+   printf("enter array size:");
+   scanf("%d",&n);
+   
+   int a[n];
+   for(int i=0;i<n;i++){
+       printf("a[%d]=",i);
+       scanf("%d",&a[i]);
+   }
+   for(int i=0;i<n;i++){
+       sum=sum+a[i];
+     
+   }
+   float avg= (float)sum/n;
+   printf("Average of an array: %.1f\n",avg);
+
+    return 0;
+}
+
+output=
+/tmp/rrJv6Eu8Sc.o
+enter array size:5
+a[0]=12
+a[1]=42
+a[2]=18
+a[3]=50
+a[4]=26
+Average of an array: 29.6
+
+

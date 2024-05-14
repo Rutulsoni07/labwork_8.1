@@ -1,0 +1,44 @@
+Q.1 Write a Program to find the length of a 1D array.
+For example,
+Input:
+Enter array size: 5
+Enter array elements:
+a[0] = 3
+a[1] = 7
+a[2] = 1
+a[3] = 8
+a[4] = 6
+
+Output:
+Length of an Array: 5
+input=
+
+#include <stdio.h>
+
+int main() {
+   int n;
+   printf("enter array size:");
+   scanf("%d",&n);
+   
+   int array[n];
+     printf("Enter array elements:\n");
+       for (int i=0;i<n;i++){
+        printf("a[%d]=",i);
+         scanf("%d", &array[i]);
+}
+
+     int length = sizeof(array) / sizeof(array[n]);
+       printf("Length of an Array: %d\n",length);
+
+
+    return 0;
+}
+output=
+enter array size:5
+Enter array elements:
+a[0]=7
+a[1]=3
+a[2]=1
+a[3]=8
+a[4]=6
+Length of an Array: 5
